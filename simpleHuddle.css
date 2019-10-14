@@ -1,0 +1,205 @@
+/*>>>>>>>>>>>>>>>>>Layout Stuff<<<<<<<<<<<<<<<<<<<<*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#pageContent {
+	width:80%;
+	height: 700px;
+	min-width: 376px;
+	max-width: 1440px;
+	margin: 10px auto;
+	background-color: hsl(257, 40%, 49%);
+	background-image: url("images/bg-desktop.svg");
+	background-repeat: no-repeat;
+	background-size: 90% 100%;
+	padding: 0 40px;
+	position: relative;
+
+}
+
+.imgDiv {
+	float: left;
+	margin-top: 25px;
+	padding-top: 40px;
+	width: 50%;
+	margin-right: 4.06%;
+	margin-left: 3.25%;
+}
+
+#img1 {
+	width: 30%;
+	padding-bottom: 50px;
+}
+
+#img2 {
+	width: 100%;
+}
+
+
+.afterImage {
+	float: right;
+	width: 39%;
+	color: white;
+	padding-right: 3.25%;
+
+}
+
+ion-icon {
+	font-size: 36px;
+	padding-left: 10px;
+	color: white;
+}
+
+footer {
+	display: block;
+	width: 32.9%;  /*w.r.t. pageContent but why?*/
+	position: absolute;
+	bottom: 32px;
+	right: 33.55%;  /*50-(32.9/2)*/
+}
+
+#bottomNav {
+	position: absolute;
+	bottom: 30px;
+	right: 10%;
+}
+
+/*>>>>>>>>>>>>>>>>Content Stuff<<<<<<<<<<<<<<<<<<*/
+
+body {
+	font-family: 'Open Sans';
+	background-color: black;
+}
+
+h1 {
+	font-family: Poppins;
+	color: white;
+	margin-top: 200px;
+}
+
+p {
+	font-family: 'Open Sans';
+}
+
+
+
+input, input:visited {
+	background-color: white;
+	color: hsl(228, 45%, 44%);
+	height: 50px;
+	width: 38%;
+	min-width: 80px;
+	margin-top: 20px;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	font-size: 1.1em;
+	box-shadow: 5px 10px 20px rgba(0,0,0,0.39);
+	transition: color 0.2s ease-in;
+	transition: background-color 0.2s ease-in;
+
+}
+
+input:hover {
+	color: white;
+	background-color: rgba(100, 120, 30, 0.4);
+}
+
+input:active {
+	color: green;
+	background-color: yellow;
+	border: none;
+}
+
+
+@media screen and (max-width: 800px) {
+	#pageContent {
+		width: 100%;
+		height: 1000px;
+		padding: 0;
+		background-image: none;
+		
+	}
+
+	.imgDiv {   
+		float: none;
+		/*width: 100%;   if you give width 100% and add a left/right margin of xpx then it will exceed the containing div
+		margin: 5px 20px;  Fix any one of the values and adjust the other to fit within the containing div*/
+		width: 93%;
+		margin: 0 auto;
+	}
+
+	#img1 {
+		display: block;
+		width: 40%;
+		padding: 0 50px;
+		padding-bottom: 5px;
+		margin: 0 auto;
+	}
+
+	#img2 {
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.afterImage {
+		clear: both;
+		display: block;
+		width: 100%;
+		margin: 0;
+		margin-top: 40px;
+		padding: 0;
+	}
+
+	h1 {
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 90%;
+		text-align: center;
+	}
+
+	p {
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	#bottomNav {
+		display: block;
+		width: 100%;
+		margin-top: 30px;
+		position: static;
+		text-align: center;
+	}
+
+	input {
+		display: block;
+		width: 40%;
+		margin: 0 auto;
+		margin-top: 11.35%;
+	}
+
+	ion-icon {
+		font-size: 36px;
+		padding-left: 2px;
+	}
+
+	footer {
+		width: 90%;
+		margin: 0 auto;
+		bottom: 32px;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	#pageContent {
+		height: 600px;
+	}
+
+	#img2 {
+		display: none;
+	}
+}

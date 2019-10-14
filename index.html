@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device  -->
+  <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="simpleHuddle.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,19 +16,34 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+  <body>
+        <div id="pageContent">
+                    <div class="imgDiv">
+                        <img id="img1" src="images/logo.svg">
+                        <img id="img2" src="images/illustration-mockups.svg"> 
+                    </div>
+                    
+                    <div class="afterImage">
+                              <h1 >Build The Community Your Fans Will Love</h1> 
+                              <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+                             Create connections with your users as you engage in genuine discussion.</p> 
 
-  Build The Community Your Fans Will Love
+                          <input type="submit" name="Register" value="Register">
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+                          <footer>
+                            <p class="attribution">
+                              This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+                            </p>
+                          </footer>  
 
-  Register
-
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
+                          <div id="bottomNav">
+                            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+                            <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+                            <a href="https://www.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+                          </div>
+                    </div>
+                    
+                   
+        </div>
+  </body>
 </html>
